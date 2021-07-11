@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/crd.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     
+    
 	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
  
     <title>Om  Construction</title>
@@ -151,10 +152,10 @@
                 <h3 id="news">News</h3>
                     <ul>
                     <marquee direction="up" scrollamout="5">
-                        <li style="color:rgb(148, 2, 34)">जिले में उत्क्रमटेक/बिड़ला गोल्ड के नंबर एक डीलर।</li>
-                        <li style="color:#373a6d">हम लाफार्ज के डीलर के रूप में जिले में तीसरे स्थान पर हैं।</li>
-                        <li style="color:rgb(60, 95, 60)">TATA TMT के अधिकृत डीलर।</li>
-                        <li style="color:rgb(5, 112, 19)">ऑनलाइन आर्डर के लिए 9572000555 कॉल करे। </li>
+                        <li style="color:rgb(148, 2, 34)">अल्ट्राटेक, नुवोको, श्री सीमेंट और डालमिया के अधिकृत डीलर।</li>
+                        <li style="color:#373a6d">टाटा टिस्कॉन और मगध टीएमटी के अधिकृत डीलर।</li>
+                        <li style="color:rgb(5, 112, 19)"> आर्डर के लिए 9572000555 कॉल करे। </li>
+                        <li style="color:#356375">हमारा कस्टमर सपोर्ट नंबर 9973298685/9162645651 है।</li>
                         </marquee>  
                     </ul>
                 </div>
@@ -183,7 +184,7 @@
                         </div>
                         <h3>Mr. Nand Kumar</h3><p>Manager <br> Mob No :9162645651</p>
                     </div>
-                    <div class="team_member">
+                    <!-- <div class="team_member">
                         <div class="member_img">
                             <img src="img/ankit1.jpg" alt="our_team">
                         </div>
@@ -194,7 +195,7 @@
                             <img src="img/ankit.jpg" alt="our_team">
                         </div>
                         <h3>Mr. Munmun Ray</h3><p>Staff<br> Mob No :7070405869</p>
-                    </div>
+                    </div> -->
                 </div>
                 
             </div>
@@ -203,7 +204,7 @@
 
     <div class="container">
         <div class="col-12">
-            <h3 class ="our_topic">Location</h3>
+            <h3 class ="our_topic">Our Location</h3>
                 <div id="map"></div>
         </div>
     </div>
@@ -211,9 +212,57 @@
     <div class="container">
         <div class="col-12">
             <h3 class ="our_topic">Contact Us</h3>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="well well-sm">
+                        <form action="https://formspree.io/f/mbjqalpe" method="POST">
+                        <div class="row">
+                            <div class="col-md-6">
+                               
+                                <div class="form-group">
+                                    <label for="name">
+                                        Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">
+                                        Email Address</label>
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                        </span>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">
+                                        Subject</label>
+                                    <select id="subject" name="subject" class="form-control" required="required">
+                                        <option value="na" selected="">Choose One:</option>
+                                        <option value="service">General Customer Query</option>
+                                        <option value="suggestions">Suggestions</option>
+                                        <option value="product">Product Support</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="name">
+                                        Message</label>
+                                    <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+                                        placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                                    Send Message</button>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                </div>
     
         </div>
     </div>
+</div>
 
 
 
@@ -322,7 +371,9 @@
   </script>
 
 <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWj-FS_jt8Z7MQa4c38Udi9WnLarwwlv0&callback=initMap&libraries=&v=weekly" async></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBinuklHYrcb4VyYMTdhwYeKcKDucvj8sg&callback=initMap&libraries=&v=weekly" async></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
 </body>
 </html>
