@@ -1,4 +1,4 @@
- consoleText(['NUVOCO (Lafarge)', 'BIRLA GOLD', 'ULTRATECH','DALMIA','SHREE','TATA TMT','MAGAD TMT','NEELKMAL TMT'], 'text',['green','gold','goldenrod','steelblue','lightsalmon','grey','Aquamarine','teal']);
+ consoleText(['NUVOCO', 'ULTRATECH','DALMIA','SHREE CEMENT','TATA TISCON','MAGADH TMT'], 'text',['green','goldenrod','steelblue','lightsalmon','grey','Aquamarine']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];

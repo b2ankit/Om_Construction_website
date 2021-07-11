@@ -371,8 +371,17 @@ body{
     text-decoration: underline #373a6d;
 }
 
+.h3_format
+{
+    text-align: center;
+    margin : 10px 0;
+}
 
-
+#map {
+    height: 600px;
+    width: 100%;
+    border-radius: 8px;
+  }
 
 
 

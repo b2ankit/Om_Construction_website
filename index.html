@@ -201,6 +201,21 @@
         </div>
     </div>
 
+    <div class="container">
+        <div class="col-12">
+            <h3 class ="our_topic">Location</h3>
+                <div id="map"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col-12">
+            <h3 class ="our_topic">Contact Us</h3>
+    
+        </div>
+    </div>
+
+
 
 <div class="row foot">
     <div class="col-12">
@@ -245,7 +260,7 @@
             <div class="footer-right">
                 <p class="footer-company-about">
                     <span>About the company</span>
-                        Authorized Dealer of UltraTech/BirlaGold, Lafarge, TATA, Dalmia, Shree and Magadh TMT.</p>
+                        Authorized Dealer of UltraTech, Nuvoco, TATA, Dalmia, Shree and Magadh TMT.</p>
                         <div class="footer-icons">
                             <a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-twitter"></i></a>
@@ -258,6 +273,8 @@
     </div>
 </div>
 </section>
+
+
 
 
 
@@ -286,5 +303,26 @@
         }
     }
 </script>
+<script>
+    // Initialize and add the map
+    function initMap() {
+      // The location of OmConstructionJalalpur
+      const OmConstructionJalalpur = { lat: 25.903888, lng: 84.69379 };
+      // The map, centered at OmConstructionJalalpur
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 15,
+        center: OmConstructionJalalpur,
+      });
+      // The marker, positioned at OmConstructionJalalpur
+      const marker = new google.maps.Marker({
+        position: OmConstructionJalalpur,
+        map: map,
+      });
+    }
+  </script>
+
+<!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWj-FS_jt8Z7MQa4c38Udi9WnLarwwlv0&callback=initMap&libraries=&v=weekly" async></script>
+
 </body>
 </html>
