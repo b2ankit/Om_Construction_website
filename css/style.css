@@ -679,6 +679,12 @@ body{
    
         margin: 0px;
       }
+
+      .our_team .team_member:hover .member_img{
+        transform: scale(.8);
+        transition: 0.8s;
+        background-color:#FFF; 
+      }
       
   
 }
